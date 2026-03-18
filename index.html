@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyNode | Hardware Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SkyNode <span style="font-weight: 800;">Solutions</span></h1>
+    </header>
+
+    <main id="dashboard">
+        <section id="cpu-card" class="card">
+            <h2>Uso de CPU</h2>
+            <p><span id="cpu-val">0</span>%</p>
+        </section>
+
+        <section id="ram-card" class="card">
+            <h2>Memória RAM</h2>
+            <p><span id="ram-val">0</span><small style="font-size: 1rem;"> GB</small></p>
+        </section>
+
+        <section id="temp-card" class="card">
+            <h2>Temperatura</h2>
+            <p><span id="temp-val">0</span>°C</p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 SkyNode Solutions - Monitoramento em Tempo Real
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

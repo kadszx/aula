@@ -1,0 +1,93 @@
+:root {
+    --bg-color: #0b0e14;
+    --card-bg: #161b22;
+    --text-primary: #e6edf3;
+    --text-secondary: #7d8590;
+    --accent-blue: #2f81f7;
+    --critical-red: #f85149;
+    --critical-bg: rgba(248, 81, 73, 0.15);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-blue);
+}
+
+main#dashboard {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    flex: 1;
+}
+
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-blue);
+}
+
+.card h2 {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+ 
+.alerta-critico {
+    background-color: var(--critical-bg) !important;
+    border-color: var(--critical-red) !important;
+    box-shadow: 0 0 20px rgba(248, 81, 73, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-top: 1px solid #30363d;
+}
