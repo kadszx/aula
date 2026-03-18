@@ -7,7 +7,7 @@
 Sistema de monitoramento de hardware em tempo real utilizando Node.js no back-end e JavaScript com Orientação a Objetos no front-end.
 
 ## 🌳 Árvore DOM do Projeto
-![Árvore DOM](./arvore-dom.png)
+![Árvore DOM](./arvore-dom.png?v=2)
 
 ## 🛠️ Como rodar
 1. No terminal, execute: `npm install`
